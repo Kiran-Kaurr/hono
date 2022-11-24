@@ -1,22 +1,19 @@
 version = 1
 
 [[analyzers]]
-name = "shell"
+name = "sql"
 enabled = true
 
 [[analyzers]]
-name = "javascript"
+name = "docker"
+enabled = true
+
+[[analyzers]]
+name = "python"
 enabled = true
 
   [analyzers.meta]
-  plugins = [
-    "angularjs",
-    "meteor",
-    "ember",
-    "vue",
-    "react",
-    "angular"
-  ]
+  runtime_version = "3.x.x"
 
 [[analyzers]]
 name = "java"

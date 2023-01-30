@@ -63,7 +63,6 @@ print(cmd)
 print()
 
 
-# input("Press Enter to continue...")
 
 class AmqpHandler(MessagingHandler):
     """

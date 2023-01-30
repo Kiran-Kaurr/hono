@@ -99,7 +99,7 @@ container = Container(AmqpHandler(uri, address))
 
 # run container in separate thread
 print("Starting (northbound) AMQP Connection...")
-thread = threading.Thread(target=lambda: container.run(), daemon=True)
+thread = threading.Thread(target=container.run, daemon=True)
 thread.start()
 
 # Give it some time to link
